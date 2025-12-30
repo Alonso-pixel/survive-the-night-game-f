@@ -12,6 +12,14 @@ An online multiplay experience where you explore randomly generated worlds in se
 
 ## Deployment
 
+### Railway (Recommended)
+
+Deploy to Railway with automatic builds and managed infrastructure:
+
+👉 **[Railway Deployment Guide](./RAILWAY_DEPLOYMENT.md)**
+
+### Docker (Self-Hosted)
+
 The game can be deployed to any VPS easily by following these steps:
 
 1. Get a VPS

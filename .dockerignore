@@ -1,0 +1,39 @@
+# Dependencies
+node_modules
+
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+docs/
+
+# Development files
+.cursor
+.cursorrules
+.editorconfig
+.dependency-cruiser.cjs
+
+# Assets not needed for build
+aseprite/
+
+# Other platforms
+react-native/
+
+# Test files
+**/*.test.ts
+**/tests/
+
+# IDE
+.vscode
+.idea
+
+# Build artifacts
+**/dist/
+**/build/
+**/.react-router/
+
+# Misc
+.github/
+scripts/

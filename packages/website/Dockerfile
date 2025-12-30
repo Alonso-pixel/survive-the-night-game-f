@@ -26,7 +26,8 @@ COPY packages/game-server/tsconfig.json ./packages/game-server/
 WORKDIR /app/packages/website
 RUN npm run build
 
-# Expose port
+# Railway automatically sets PORT - don't override it
 EXPOSE 3000
 
-CMD ["npm", "run", "start"]
+# Use shell form to allow PORT env var substitution
+CMD npx react-router-serve ./build/server/index.js

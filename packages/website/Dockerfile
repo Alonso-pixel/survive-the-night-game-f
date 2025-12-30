@@ -11,14 +11,16 @@ COPY tsconfig.json ./
 COPY packages/website/package*.json ./packages/website/
 COPY packages/game-client/package*.json ./packages/game-client/
 COPY packages/game-shared/package*.json ./packages/game-shared/
+COPY packages/game-server/package*.json ./packages/game-server/
 
 # Install all dependencies
 RUN npm ci
 
-# Copy source files
+# Copy source files and tsconfig files
 COPY packages/game-shared ./packages/game-shared
 COPY packages/game-client ./packages/game-client
 COPY packages/website ./packages/website
+COPY packages/game-server/tsconfig.json ./packages/game-server/
 
 # Build the website
 WORKDIR /app/packages/website
